@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMULÁRIO</title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="listas.html">Listas</a>
+            </li>
+            <li>
+                <a href="tabela.html">Tabela</a>
+            </li>
+            <li>
+                <a href="img.html">Imagens</a>
+            </li>
+        </ul>
+
+        <h3>FORMULÁRIO</h3>
+        
+        <form>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" required>
+            </div>    
+            <br>
+            <div>
+                <label for="idade">Idade: </label>
+                <input type="number" min="0" max="120" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">email: </label>
+                <input type="text" required>
+            </div>
+            <br>
+            <div>
+                <label for="senha">Senha: </label>
+                <input type="password" required>
+            </div>
+            <br>
+            <div>
+                <label for="confirmesenha">
+                    Confirme a senha: 
+                    <input type="password" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="datanascimento">Data de nascimento: </label>
+                <input type="date" required>
+            </div>
+            <br>    
+            <div>
+                <label for="">
+                    Telefone: 
+                    <input type="tel" required placeholder="(XX)XXXXX-XXXX">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="peso">
+                    Peso: <input type="number" min="0" max="200" step="0.25">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="volume">
+                    Som: <input type="range" min="0" max="100" step="20">
+                </label>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Estado Civil</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="est_civil" value="casado"> Casado:   
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="est_civil" value="solteiro"> Solteiro: 
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="est_civil" value="divorciado"> Divorciado:
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Produtos</legend>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="computador" value="computador"> Computador
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="impressora" value="impressora"> Impressora
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="monitor" value="monitor"> Monitor
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label>
+                    Deixe sua sugestão: 
+                    <textarea cols="30" rows="5"> </textarea>
+                </label>
+            </div>
+            <br>
+            <hr>
+            <div>
+                <p>
+                    <label>
+                        Carro:
+                        <select name="carros" required>
+                            <optgroup label="1 Esportivos">
+                            <option value="1.1">Ferrari</option>
+                            <option value="1.2">Porshe</option>
+                            <option value="1.3">McLaren</option>
+                            <option value="1.4">Lamborghini</option>
+
+                            <optgroup label="2 Popular">
+                            <option value="1.1">Corsa</option>
+                            <option value="1.2">Uno</option>
+                            <option value="1.3">Gol</option>
+                        </select>
+                    </label>
+                </p>
+            </div>
+            <hr>
+
+            <button type="submit">Enviar: </button>
+        </form>
+    </body>
+</html>
